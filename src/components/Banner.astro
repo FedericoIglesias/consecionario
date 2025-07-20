@@ -1,21 +1,42 @@
-<section id="banner">
-  <strong>Bienvenido a MR CARS</strong>
-  <p>Tu concesionario de confianza para vehículos de ocasión.</p>
+<section class="banner">
+  <div class="bg"></div>
+  <div class="text">
+    <strong>Bienvenido a YOU CAR</strong>
+    <p>Tu concesionario de confianza para vehículos de ocasión.</p>
+  </div>
 </section>
 
 <style>
-  #banner {
-    background-color: #f8f9fa;
-    padding: 20px;
-    text-align: center;
+  .banner {
+    height: 100vh;
+    position: relative;
+    z-index: 0;
   }
-  #banner strong {
+  .bg {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/img/background_about_us.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+  }
+  .banner strong {
     display: block;
     font-size: 1.5em;
     margin-bottom: 10px;
   }
-  #banner p {
-    font-size: 1.2em;
-    color: #6c757d;
+  .banner p {
+    font-size: 14px;
+    color: #fff;
   }
 </style>

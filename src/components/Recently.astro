@@ -1,0 +1,36 @@
+---
+import Cards from "./Cards.astro";
+---
+
+<section class="recently">
+  <h2>Entradas <span>Recientes</span></h2>
+  <div>
+    <Cards />
+  </div>
+</section>
+
+<style>
+  .recently {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  .recently h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    & span {
+      margin-left: 10px;
+      color: #ffd700;
+      font-weight: bold;
+    }
+  }
+  .recently div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+</style>

@@ -79,14 +79,5 @@
     "TransmissionType": "CVT",
     "CarType": "Sedan",
     "Price": 13000
-  },
-  {
-    "Brand": "Mercedes-Benz",
-    "Model": "C-Class",
-    "Year": 2020,
-    "KM": 21000,
-    "TransmissionType": "Automatic",
-    "CarType": "Luxury Sedan",
-    "Price": 35000
   }
 ]

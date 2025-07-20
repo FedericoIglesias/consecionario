@@ -6,15 +6,14 @@ import cars from "../assets/data/cars.json";
   cars.map((car) => (
     <article class="card">
       <header>
-        <p>{car.CarType}</p>
-        <p>⭐</p>
+        <p>NOVEDAD</p>
         <p>
           {car.Price}€ <span>Impuestos incluidos</span>
         </p>
       </header>
       <main>
         <p>
-          {car.Brand} {car.Model}
+          {car.Brand}-{car.Model}-{car.CarType}
         </p>
         <div>
           <p>
@@ -34,20 +33,51 @@ import cars from "../assets/data/cars.json";
 
 <style>
   .card {
-    outline: 1px solid #ccc;
-    max-width: 300px;
+    box-shadow: 1px 1px 5px grey;
+    width: 300px;
   }
   .card header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: url("../assets/img/lamborghini.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+    color: #fff;
+    & p:first-child {
+      background-color: rgb(119, 195, 6);
+      padding: 1px;
+      font-size: 13px;
+      font-weight: 700;
+      position: absolute;
+      top: 1px;
+      left: 3px;
+    }
+    & p:last-child {
+      background-color: #ffd700;
+      padding: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 1px;
+      right: 3px;
+      & span {
+        font-size: 12px;
+        font-weight: normal;
+        background-color: #222;
+        padding: 2px 5px;
+      }
+    }
   }
   .card main {
-    background-color: antiquewhite;
+    background-color: white;
     padding: 10px;
   }
   .card main p {
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
     color: #333;
     text-align: center;
   }
@@ -56,11 +86,12 @@ import cars from "../assets/data/cars.json";
     justify-content: space-evenly;
   }
   .card main div p {
-    font-size: 11px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     align-items: start;
-    color: #ccc;
+    color: grey;
+    font-weight: 500;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

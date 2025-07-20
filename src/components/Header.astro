@@ -1,0 +1,46 @@
+<header class="header">
+  <h1>Car Page</h1>
+  <nav>
+    <ul>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#exposicion">Exposición</a></li>
+      <li><a href="/about">Servicios</a></li>
+      <li><a href="#economics">Económicos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    background-color: rgba(3, 3, 3, 0.8);
+    position: fixed;
+    width: 99%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & h1 {
+      font-size: 20px;
+      color: #ffd700;
+      text-transform: uppercase;
+    }
+    & nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      & li {
+        margin: 0 5px;
+        & a {
+          text-decoration: none;
+          color: #000;
+          font-weight: bold;
+          &:hover {
+            /* border-bottom: 2px solid #ffd700; */
+            color: #ffd700;
+          }
+        }
+      }
+    }
+  }
+</style>

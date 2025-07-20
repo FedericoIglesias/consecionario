@@ -1,0 +1,92 @@
+[
+  {
+    "Brand": "Toyota",
+    "Model": "Corolla",
+    "Year": 2018,
+    "KM": 45000,
+    "TransmissionType": "Automatic",
+    "CarType": "Sedan",
+    "Price": 15000
+  },
+  {
+    "Brand": "Honda",
+    "Model": "Civic",
+    "Year": 2020,
+    "KM": 32000,
+    "TransmissionType": "Manual",
+    "CarType": "Sedan",
+    "Price": 18000
+  },
+  {
+    "Brand": "Ford",
+    "Model": "Focus",
+    "Year": 2017,
+    "KM": 60000,
+    "TransmissionType": "Automatic",
+    "CarType": "Hatchback",
+    "Price": 12000
+  },
+  {
+    "Brand": "BMW",
+    "Model": "320i",
+    "Year": 2019,
+    "KM": 25000,
+    "TransmissionType": "Automatic",
+    "CarType": "Sedan",
+    "Price": 27000
+  },
+  {
+    "Brand": "Volkswagen",
+    "Model": "Golf",
+    "Year": 2021,
+    "KM": 15000,
+    "TransmissionType": "Manual",
+    "CarType": "Hatchback",
+    "Price": 22000
+  },
+  {
+    "Brand": "Hyundai",
+    "Model": "Elantra",
+    "Year": 2016,
+    "KM": 78000,
+    "TransmissionType": "Automatic",
+    "CarType": "Sedan",
+    "Price": 10000
+  },
+  {
+    "Brand": "Chevrolet",
+    "Model": "Cruze",
+    "Year": 2015,
+    "KM": 82000,
+    "TransmissionType": "Manual",
+    "CarType": "Sedan",
+    "Price": 9500
+  },
+  {
+    "Brand": "Kia",
+    "Model": "Rio",
+    "Year": 2022,
+    "KM": 9000,
+    "TransmissionType": "Automatic",
+    "CarType": "Subcompact",
+    "Price": 17000
+  },
+  {
+    "Brand": "Nissan",
+    "Model": "Sentra",
+    "Year": 2018,
+    "KM": 53000,
+    "TransmissionType": "CVT",
+    "CarType": "Sedan",
+    "Price": 13000
+  },
+  {
+    "Brand": "Mercedes-Benz",
+    "Model": "C-Class",
+    "Year": 2020,
+    "KM": 21000,
+    "TransmissionType": "Automatic",
+    "CarType": "Luxury Sedan",
+    "Price": 35000
+  }
+]

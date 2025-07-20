@@ -1,0 +1,71 @@
+---
+import cars from "../assets/data/cars.json";
+---
+
+{
+  cars.map((car) => (
+    <article class="card">
+      <header>
+        <p>{car.CarType}</p>
+        <p>⭐</p>
+        <p>
+          {car.Price}€ <span>Impuestos incluidos</span>
+        </p>
+      </header>
+      <main>
+        <p>
+          {car.Brand} {car.Model}
+        </p>
+        <div>
+          <p>
+            Año<span>{car.Year}</span>
+          </p>
+          <p>
+            Kilómetros<span>{car.KM}</span>
+          </p>
+          <p>
+            Transmisión<span>{car.TransmissionType}</span>
+          </p>
+        </div>
+      </main>
+    </article>
+  ))
+}
+
+<style>
+  .card {
+    outline: 1px solid #ccc;
+    max-width: 300px;
+  }
+  .card header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .card main {
+    background-color: antiquewhite;
+    padding: 10px;
+  }
+  .card main p {
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+  }
+  .card main div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .card main div p {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: #ccc;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    & span {
+      color: #000;
+    }
+  }
+</style>

@@ -1,0 +1,107 @@
+<section class="services">
+  <!-- servicios -->
+  <h3>Servicios</h3>
+  <hr>
+  <p>
+    Todos nuestros coches salen del concesionario con de 1 a 2 años de GARANTÍA,
+    para tu mayor tranquilidad, todos han sido revisado en todos los aspectos.
+  </p>
+  <section>
+    <article>
+      <p>RREVISIÓN DE ACEITE</p>
+    </article>
+    <article>
+      <p>REVISIÓN DE FRENOS</p>
+    </article>
+    <article>
+      <p>REVISIÓN DE TRANSMISIÓN</p>
+    </article>
+    <article>
+      <p>REVISIÓN DE AIRE ACONDICIONADO</p>
+    </article>
+    <article>
+      <p>SISTEMA DE REFIGERACIÓN</p>
+    </article>
+    <article>
+      <p>DIAGNÓSTICO MECÁNICO</p>
+    </article>
+    <article>
+      <p>NIVELES DE LÍQUIDOS</p>
+    </article>
+    <article>
+      <p>MECÁNICA GENERAL</p>
+    </article>
+    <article>
+      <p>MANTENIMIENTO PREVENTIVO</p>
+    </article>
+  </section>
+</section>
+
+<style>
+  .services {
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    & hr {
+      width: 90%;
+      height: 0.5px;
+      background-color: #ffd700;
+      margin: auto;
+      display: block;
+      border: none;
+    }
+  }
+
+
+  .services h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .services p {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .services section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-image: url("../assets/img/reparacion.jpeg");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0px;
+  }
+
+  article {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  article:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    outline: 1px solid #ddd;
+    box-shadow: 1px 1px 5px #ffd700;
+    cursor: pointer;
+  }
+
+  article p {
+    font-weight: bold;
+    color: #333;
+  }
+</style>

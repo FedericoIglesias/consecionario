@@ -1,14 +1,14 @@
 <section class="services">
   <!-- servicios -->
   <h3>Servicios</h3>
-  <hr>
+  <hr />
   <p>
     Todos nuestros coches salen del concesionario con de 1 a 2 años de GARANTÍA,
     para tu mayor tranquilidad, todos han sido revisado en todos los aspectos.
   </p>
   <section>
     <article>
-      <p>RREVISIÓN DE ACEITE</p>
+      <p>REVISIÓN DE ACEITE</p>
     </article>
     <article>
       <p>REVISIÓN DE FRENOS</p>
@@ -52,7 +52,6 @@
     }
   }
 
-
   .services h3 {
     text-align: center;
     font-size: 30px;
@@ -87,9 +86,14 @@
     font-size: 13px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-
+    justify-content: center;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+      height: 100px;
+      font-weight: bold;
+      color: #333;
   }
   article:hover {
     background-color: rgba(255, 255, 255, 0.9);
@@ -100,8 +104,38 @@
     cursor: pointer;
   }
 
-  article p {
-    font-weight: bold;
-    color: #333;
-  }
 </style>
+
+<script>
+  import service from "../assets/data/service.json";
+
+  // Add index signature to allow string indexing
+  const serviceData: { [key: string]: string } = service as {
+    [key: string]: string;
+  };
+
+  const articles = document.querySelectorAll(".services section article");
+  articles.forEach((article) => {
+    article.addEventListener("mouseover", (item) => {
+      for (const key in serviceData) {
+        if (key === article?.textContent?.trim()) {
+          article.textContent = serviceData[key];
+          article.setAttribute("syle", "font-size: 5px;");
+          break;
+        }
+      }
+    });
+    article.addEventListener("mouseout", () => {
+      for (const key in serviceData) {
+        if (serviceData[key] === article?.textContent?.trim()) {
+          article.textContent = key;
+          article.setAttribute(
+            "style",
+            "font-size: 13px; font-weight: bold;color: #333;"
+          );
+          break;
+        }
+      }
+    });
+  });
+</script>

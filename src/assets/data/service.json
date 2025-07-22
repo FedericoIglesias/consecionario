@@ -1,12 +1,11 @@
-[
-  {"Reparaciones de mecánica general":"Solución de fallas comunes en el motor y componentes mecánicos."},
-  {"Mantenimiento preventivo del coche":"Revisión periódica para evitar futuras averías y desgastes."},
-  {"Revisión de aire acondicionado":"Inspección del sistema para asegurar buen enfriamiento y funcionamiento."},
-  {"Revisión del sistema de refrigeración":"Comprobación del radiador, mangueras y líquido refrigerante del motor."},
-  {"Revisión del nivel de aceite":"Control del aceite del motor para evitar daños por fricción."},
-  {"Cambio de los filtros de aceite":"Sustitución del filtro para mantener el aceite limpio y eficaz."},
-  {"Revisión de los frenos":"Inspección de pastillas, discos y líquido para garantizar seguridad."},
-  {"Diagnóstico mecánico":"Detección de fallos mediante herramientas electrónicas y revisión manual."},
-  {"Niveles de líquidos":"Verificación de todos los líquidos frenos, dirección, refrigerante, limpiaparabrisas."},
-  {"Revisión de la transmisión":"Evaluación del sistema de transmisión para cambios suaves y sin fallos"}
-]
+{
+  "REVISIÓN DE ACEITE": "Verificamos nivel y calidad del aceite para buen funcionamiento.",
+  "REVISIÓN DE FRENOS": "Inspeccionamos discos, pastillas y líquido para máxima seguridad.",
+  "REVISIÓN DE TRANSMISIÓN": "Evaluamos transmisión para detectar fallas y asegurar cambios suaves.",
+  "REVISIÓN DE AIRE ACONDICIONADO": "Revisamos gas, filtros y funcionamiento del sistema de climatización.",
+  "SISTEMA DE REFIGERACIÓN": "Chequeamos radiador, mangueras y anticongelante para evitar sobrecalentamientos.",
+  "DIAGNÓSTICO MECÁNICO": "Detectamos fallas mediante escáner y revisión física del vehículo.",
+  "NIVELES DE LÍQUIDOS": "Comprobamos niveles de frenos, dirección, refrigerante y limpiaparabrisas.",
+  "MECÁNICA GENERAL": "Atendemos problemas mecánicos comunes para garantizar funcionamiento óptimo.",
+  "MANTENIMIENTO PREVENTIVO": "Realizamos inspecciones periódicas para prevenir fallas y daños mayores."
+}

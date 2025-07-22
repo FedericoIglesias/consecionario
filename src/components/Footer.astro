@@ -6,9 +6,11 @@
         <hr />
         <p>Estaremos encantados de atenderte:</p>
         <ul>
-          <li>Calle Ejemplo, 123, Ciudad</li>
-          <li>mr.cards@mr.cards</li>
-          <li>+34 000 000 000</li>
+          <li>
+            <i class="material-icons">place</i> Calle Ejemplo, 123, Ciudad
+          </li>
+          <li><i class="material-icons">email</i> mr.cards@mr.cards</li>
+          <li><i class="material-icons">phone</i> +34 000 000 000</li>
         </ul>
       </article>
       <article>
@@ -30,22 +32,69 @@
 
 <style>
   .footer {
+    padding: 5px;
     background-image: url("../assets/img/background_footer.jpeg");
     background-size: cover;
     background-position: center;
     color: #fff;
     & div {
       background-color: rgba(0, 0, 0, 0.8);
+      padding-top: 20px;
       & main {
         display: flex;
         justify-content: space-around;
         padding: 20px;
-        & h6{
+        & h6 {
           font-size: 20px;
-          color: #ffd700;
           text-transform: uppercase;
+          font-weight: 200;
+        }
+        & hr {
+          border-color: #ffd700;
+        }
+        & article:first-child {
+          & p {
+            font-size: 18px;
+            margin: 10px 0;
+          }
+          & ul {
+            list-style: none;
+            padding: 0;
+            & li {
+              margin: 5px 0;
+              margin-left: 10px;
+              & i {
+                color: #ffd700;
+                margin-right: 5px;
+                transform: translate(0, 2px);
+                font-size: 15px;
+              }
+            }
+          }
+        }
+        & article:last-child {
+          & p {
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: 200;
+          }
+          & ul {
+            list-style: none;
+            & li {
+              margin: 5px 0;
+              cursor: pointer;
+              &:hover {
+                color: #ffd700;
+              }
+            }
+          }
         }
       }
+    }
+    & footer {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
     }
   }
 </style>

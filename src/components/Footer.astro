@@ -1,33 +1,55 @@
 <footer class="footer">
-  <main>
-    <article>
-      <h6>Contacto</h6>
-      <p>Estaremos encantados de atenderte:</p>
-      <ul>
-        <li>Calle Ejemplo, 123, Ciudad</li>
-        <li>mr.cards@mr.cards</li>
-        <li>+34 000 000 000</li>
-      </ul>
-    </article>
-    <article>
-      <p>Enlaces de interés:</p>
-      <ul>
-        <li>Aviso Legal</li>
-        <li>Política de Cookies</li>
-        <li>Accesibilidad web</li>
-      </ul>
-    </article>
-  </main>
-  <footer>
-    <p>© 2025 MR CARS. Todos los derechos reservados.</p>
-    <p>Creado por ICTA</p>
-  </footer>
+  <div>
+    <main>
+      <article>
+        <h6>Contacto</h6>
+        <hr />
+        <p>Estaremos encantados de atenderte:</p>
+        <ul>
+          <li>Calle Ejemplo, 123, Ciudad</li>
+          <li>mr.cards@mr.cards</li>
+          <li>+34 000 000 000</li>
+        </ul>
+      </article>
+      <article>
+        <p>Enlaces de interés:</p>
+        <hr />
+        <ul>
+          <li>Aviso Legal</li>
+          <li>Política de Cookies</li>
+          <li>Accesibilidad web</li>
+        </ul>
+      </article>
+    </main>
+    <footer>
+      <p>© 2025 MR CARS. Todos los derechos reservados.</p>
+      <p>Creado por ICTA</p>
+    </footer>
+  </div>
 </footer>
 
 <style>
-.footer {
-  background-image: url("../assets/img/background_footer.jpeg");
-  background-size: cover;
-  background-position: center;
-}
+  .footer {
+    background-image: url("../assets/img/background_footer.jpeg");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    & div {
+      background-color: rgba(0, 0, 0, 0.8);
+      & main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+        & h6{
+          font-size: 20px;
+          color: #ffd700;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 </style>
+
+<!-- "\f3c5" -->
+<!-- "\f095" -->
+<!-- "\f0e0" -->

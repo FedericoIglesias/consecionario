@@ -19,7 +19,21 @@ import Revision from "../components/revision.astro";
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <style is:global>
+      html,
+      body {
+        position: relative;
+        background-color: #333;
+      }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
+
   <body>
     <Header />
     <main>
@@ -32,16 +46,3 @@ import Revision from "../components/revision.astro";
     <Footer />
   </body>
 </html>
-
-<style>
-  html,body {
-    position: relative;
-    background-color: #333;
-  }
-  * {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-  }
-</style>

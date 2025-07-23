@@ -1,4 +1,4 @@
-<section class="services">
+<section class="services" id="services">
   <!-- servicios -->
   <h3>Servicios</h3>
   <hr />
@@ -8,38 +8,38 @@
   </p>
   <section>
     <article>
-      <p>REVISIÓN DE ACEITE</p>
+      REVISIÓN DE ACEITE
     </article>
     <article>
-      <p>REVISIÓN DE FRENOS</p>
+      REVISIÓN DE FRENOS
     </article>
     <article>
-      <p>REVISIÓN DE TRANSMISIÓN</p>
+      REVISIÓN DE TRANSMISIÓN
     </article>
     <article>
-      <p>REVISIÓN DE AIRE ACONDICIONADO</p>
+      REVISIÓN DE AIRE ACONDICIONADO
     </article>
     <article>
-      <p>SISTEMA DE REFIGERACIÓN</p>
+      SISTEMA DE REFIGERACIÓN
     </article>
     <article>
-      <p>DIAGNÓSTICO MECÁNICO</p>
+      DIAGNÓSTICO MECÁNICO
     </article>
     <article>
-      <p>NIVELES DE LÍQUIDOS</p>
+      NIVELES DE LÍQUIDOS
     </article>
     <article>
-      <p>MECÁNICA GENERAL</p>
+      MECÁNICA GENERAL
     </article>
     <article>
-      <p>MANTENIMIENTO PREVENTIVO</p>
+      MANTENIMIENTO PREVENTIVO
     </article>
   </section>
 </section>
 
 <style>
   .services {
-    padding: 20px;
+    padding: 30px;
     background-color: #f0f0f0;
     color: #333;
     & hr {
@@ -87,13 +87,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    height: 100px;
+    font-weight: bold;
+    color: #000;
     transition:
       background-color 0.3s ease,
       transform 0.3s ease,
       box-shadow 0.3s ease;
-      height: 100px;
-      font-weight: bold;
-      color: #333;
   }
   article:hover {
     background-color: rgba(255, 255, 255, 0.9);
@@ -103,7 +104,6 @@
     box-shadow: 1px 1px 5px #ffd700;
     cursor: pointer;
   }
-
 </style>
 
 <script>
@@ -119,8 +119,8 @@
     article.addEventListener("mouseover", (item) => {
       for (const key in serviceData) {
         if (key === article?.textContent?.trim()) {
-          article.textContent = serviceData[key];
-          article.setAttribute("syle", "font-size: 5px;");
+          article.innerHTML = `${serviceData[key]}`;
+          article.setAttribute("style", "font-size: 12px;");
           break;
         }
       }
@@ -129,10 +129,7 @@
       for (const key in serviceData) {
         if (serviceData[key] === article?.textContent?.trim()) {
           article.textContent = key;
-          article.setAttribute(
-            "style",
-            "font-size: 13px; font-weight: bold;color: #333;"
-          );
+          article.setAttribute("style", "font-size: 16px;");
           break;
         }
       }
